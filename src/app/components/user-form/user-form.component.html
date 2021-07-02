@@ -1,0 +1,6 @@
+<form class="user-form" [formGroup]="form" (ngSubmit)="submitForm()">
+  <h1 class="title">Register</h1>
+  <input placeholder="Name" formControlName="name" type="text" />
+  <input placeholder="Email" formControlName="email" type="text" />
+  <button class="main-button" type="submit">Add to queue</button>
+</form>

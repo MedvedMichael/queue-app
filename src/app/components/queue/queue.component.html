@@ -1,0 +1,9 @@
+<div class="queue">
+  <h1 class="title">Queue</h1>
+  <app-user-card *ngFor="let user of queue" [user]="user"></app-user-card>
+  <button (click)="this.queueService.shuffleQueue()" class="main-button">
+    Shuffle
+  </button>
+  <!-- <button (click)="this.queueService.arrChange.next([])"></button> -->
+  <!-- <p *ngFor="let a of this.queueService.arr">{{ a }}</p> -->
+</div>

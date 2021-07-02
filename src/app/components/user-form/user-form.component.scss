@@ -1,0 +1,36 @@
+.user-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  margin-top: 1rem;
+  max-width: 40rem;
+  color: var(--text-color);
+
+  * {
+    margin: 0.5rem;
+  }
+
+  input {
+    font-size: 1.75rem;
+    padding: 0.5rem;
+    border: 1px solid var(--main-color);
+    border-radius: 0.25rem;
+    &.ng-touched.ng-invalid {
+      border-color: red;
+    }
+
+    &.ng-touched.ng-valid {
+      border-color: limegreen;
+    }
+  }
+
+  .title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2.5rem 0;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+}

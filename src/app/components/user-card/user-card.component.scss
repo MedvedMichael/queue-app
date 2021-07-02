@@ -1,0 +1,33 @@
+.user-card {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 0.25rem;
+  margin: 0.25rem;
+  transition: all 0.2s ease-in-out;
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  button {
+    margin: auto 2rem auto auto;
+    font-size: 1.25rem;
+  }
+}
